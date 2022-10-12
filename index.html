@@ -14,12 +14,76 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <!-- on peut utiliser section.greeting + tabulation -->
+    <!-- on peut utiliser section.greeting + tabulation et la classe va prendre ce qu'on ajouter sur la section-->
   <section class="greeting">
    
     <h2 class="title">
-        what's name <input type="text" name="" id="">
+        what's up, <input type="text" id="name" placeholder="name here">
     </h2>
+  </section>
+
+  <section class="create-todo">
+    <h3>CREATE A TODO</h3>
+    <!--le racourci es form#new-todo-form la class va prendre automatique new-todo-form-->
+    <form  id="new-todo-form">
+      <h3>What on your todo list</h3>
+      <!--pur les input on utilise input:text-->
+      <input type="text" name="content" id="content" placeholder="e.g make a video"> 
+      <h4>Pick a catergorie</h4>
+      <!--si on veut utiliser  un div avec un attribut on utilise le point apres l'optoin .otpion +tab-->
+      <div class="option">
+          <label >
+            <input type="radio" name="category" id="category1" value="business"/>
+            <span class="bubble business"></span>
+            <div>Business</div>
+          </label>
+          <label >
+            <input type="radio" name="category" id="category2" value="personal"/>
+            <span class="bubble personal"></span>
+            <div>Personal</div>
+          </label>
+      </div>
+      <input type="submit" value="add todo">
+      </form>
+      <div class="option"></div>     
+    </form>
+  </section>
+
+  <section class="todo-list">
+    <h3>TODO LIST</h3>
+    <div class="list" id="todo-list">
+      <!-- <div class="todo-item done">
+        <label >
+          <input type="checkbox"/>
+          <span class="bubble business"></span>
+        </label>
+
+        <div class="todo cotent">
+          <input type="text" value="make a video" readonly/>
+        </div>
+
+        <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </div>
+      </div>
+
+      <div class="todo-item">
+        <label >
+          <input type="checkbox"/>
+          <span class="bubble personal"></span>
+        </label>
+
+        <div class="todo cotent">
+          <input type="text" value="get milk" readonly/>
+        </div>
+
+        <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </div>
+      </div> -->
+    </div>
   </section>
 </body>
 </html>
